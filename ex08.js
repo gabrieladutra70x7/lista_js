@@ -1,8 +1,10 @@
 const prompt = require('prompt-sync')();
 
-console.log("--- Cálculo do Volume da Caixa Retangular ---");
-let comp = Number(prompt("Digite o valor do comprimento: " ));
-let larg = Number(prompt("Digite o valor do largura: " ));
-let altura = Number(prompt("Digite o valor da altura: " ));
-let Volume = comp * larg * altura;
-console.log(`O Volume é: ${Volume} cm³`);
+console.log("--- Adição e Multiplicação de Quatro Números Inteiros ---");
+let a = Number(prompt("Digite o primeiro valor: " ));
+let b = Number(prompt("Digite o segundo  valor: " ));
+let c = Number(prompt("Digite o terceiro valor: " ));
+let d = Number(prompt("Digite o quarto valor: " ));
+
+console.log(`Adições: ${a}+${b} = ${a+b}\n ${a}+${c} = ${a+c}\n${a}+${d} = ${a+d}\n${b}+${c} = ${b+c}\n${b}+${d} = ${b+d}\n${c}+${d} = ${c+d}\n`);
+console.log(`Multiplicações: ${a}*${b} = ${a*b}\n ${a}*${c} = ${a*c}\n${a}*${d} = ${a*d}\n${b}*${c} = ${b*c}\n${b}*${d} = ${b*d}\n${c}*${d} = ${c*d}\n`);
