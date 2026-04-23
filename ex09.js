@@ -4,5 +4,9 @@ console.log("--- Cálculo do Volume da Caixa Retangular ---");
 let comp = Number(prompt("Digite o valor do comprimento: " ));
 let larg = Number(prompt("Digite o valor da largura: " ));
 let altura = Number(prompt("Digite o valor da altura: " ));
+    if(isNaN(comp) || isNaN(larg) || isNaN(altura)){
+        console.log("Erro: Certifique-se de inserir valores numéricos válidos ");
+    }else{
 let Volume = comp * larg * altura;
 console.log(`O Volume é: ${Volume} cm³`);
+    }
